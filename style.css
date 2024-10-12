@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', system-ui;
+  background-color: #101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.calorie-container {
+  width: 450px;
+  height: auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 6px 6px 0 0 #eb00c0, 6px 6px 0 1px #eb00c0;
+}
+
+.calorie-container .div-flavour .flavour-select option {
+  width: 100%;
+  padding: 2rem;
+}
+
+.calorie-container .iceCream-div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.checkbox-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 15px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.checkbox-item {
+  width: 100%;
+  display: flex;
+  column-gap: 10px;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.label-div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.label-div img {
+  max-width: 20px;
+}
+
+.note-div {
+  margin-top: 12px;
+}
+
+.note-div p {
+  font-size: 12px;
+}
+
+.calorie-container .iceCream-div img {
+  max-width: 60px;
+}
+
+.div-name {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 10px;
+}
+
+.div-name input {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: #e3e3e3;
+  margin-top: 0.5rem;
+}
+
+.div-name button {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+}
+
+.order-summary-div {
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+
+.div-name .name label[for='customer'] {
+  color: #232323;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.flavour label[for='flavour'] {
+  color: #232323;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.order-summary-div {
+  display: none;
+}
+
+.order-summary-div p {
+  font-size: 14px;
+  color: #000000;
+}
+
+.order-summary-div h4 {
+  color: #232323;
+  font-size: 1em;
+  font-weight: 600;
+  margin-buttom: 15px;
+}
+
+.div-name button:hover {
+  background-color: #312f2f;
+  color: white;
+}
+
+.flavour label {
+  /* color: #000000; */
+}
+
+@media (max-width: 500px) {
+  .calorie-container {
+    width: 350px;
+  }
+
+  .calorie-container .iceCream-div h1 {
+    font-size: 26px;
+    line-height: 35px;
+  }
+}

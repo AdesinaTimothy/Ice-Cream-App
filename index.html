@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ice Cream App</title>
+</head>
+<body>
+    
+    <div class="calorie-container">
+        <div class="iceCream-div">
+            <h1>Order Ice Cream</h1> 
+            <img src="img/8942159_ice_cream_icecream_sweet_dessert_icon.png" alt="">
+        </div>
+        
+        <!-- Div to enter name -->
+        <div class="div-name">
+            <div class="name">
+                <label for="customer">Customer Name:</label>
+                <input type="text" class="name" id="text" placeholder="Please kindly enter your name here">
+            </div>
+
+        <!-- Div to select favour -->   
+
+            <div class="flavour">
+                <label for="flavour">Choose flavour:</label>
+                <div class="checkbox-list">
+                    <div class="checkbox-item">
+                        <div class="label-div"><label for="Vanilla">Vanilla</label>
+                            <img src="img/51201_cherry_vanilla_icon.png" alt="">
+                        </div>
+                        <div><input type="checkbox" id="Vanilla" name="Vanilla" value="500"></div>
+                    </div>
+                    <div class="checkbox-item">
+                        <div class="label-div"><label for="Chocolate">Chocolate</label>
+                            <img src="img/67366_chocolate_ice cream_icon.png" alt="">
+                        </div>
+                        <div><input type="checkbox" id="Chocolate" name="Chocolate" value="500"></div>
+                    </div>
+                    <div class="checkbox-item">
+                        <div class="label-div"><label for="Strawberry">Strawberry</label>
+                            <img src="img/2998118_fruit_healthy_strawberry_icon.png" alt="">
+                        </div>
+                        <div><input type="checkbox" id="Strawberry" name="Strawberry" value="500"></div>
+                    </div>
+                </div>
+
+                <div class="note-div">
+                    <p>Note: One flavour (scoop) cost <span>&#8358;</span>500 naira only</p>
+                </div>
+            </div>
+
+
+            <!-- <div class="cycling">
+                <label for="cycling">Cycling (Minutes):</label>
+                <input type="number" class="cycling" id="cycling">
+            </div> -->
+
+            <button class="cal" id="cal">Place Order Now</button>
+
+            <div class="total-calories" id="total-calories">
+
+            </div>
+        </div>
+
+        <!-- order summary -->
+         <div class="order-summary-div">
+            <h4>Your Order Summary</h4>
+            <div class="customer-name-div">
+                Customer Name: Timothy
+            </div>
+            <div class="flavours-ordered-div">
+                Flavours Ordered: Vanilla, Chocolate, Strawberry
+            </div>
+            <div class="total-Price-div">
+                <p>Total Price: 1500 naira (500 naira per scoop for 3 scoops)</p>
+            </div>
+         </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
